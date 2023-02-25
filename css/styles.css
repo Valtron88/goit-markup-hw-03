@@ -1,0 +1,378 @@
+body{
+     font-family: "Roboto",sans-serif;
+     color: var(--brand-color)
+}
+:root {
+    --brand-color: #2E2F42;
+    --fiolet:#4D5AE5;
+    --ocean:#404BBF;
+    --gray:#434455;
+    --white-logo:#F4F4FD;
+    --white:#FFFFFF;
+    --footer-text:#E7E9FC;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1148px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+.list{
+    list-style-type:none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/*-----header--------*/
+
+.header {
+    padding: 24px 0;
+}
+
+.header-navigation {
+}
+
+.header-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+}
+
+.logo-span{
+    color: var(--fiolet);
+}
+
+.header-list {   
+}
+
+.header-item {
+}
+
+.header-link {
+    font-weight:500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+}
+
+.header-link:hover,
+.header-mail:hover,
+.header-telephon:hover,
+.header-mail:focus,
+.header-telephon:focus,
+.header-link:focus{
+    color:var(--ocean);
+}
+
+.header-adress {   
+}
+
+.header-adress-list  {
+    
+}
+
+.header-adress-link {   
+    
+}
+
+
+.header-mail{
+    color:var(--gray);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.header-telephon{
+    color:var(--gray);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*-----/header--------*/
+
+/*-----hero--------*/
+
+.hero-saction {
+    background-color:var(--brand-color);
+    margin-top: 72px;
+    padding: 188px 472px 188px 472px;
+    min-width: 1440px;
+    min-height: 600px;
+ 
+}
+
+.hero-head {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color:var(--white);
+    display: block;
+    width: 496px;
+    margin: 0 auto 48px auto;
+   
+
+}
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    background-color: var(--fiolet);
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hero-btn:focus,
+.hero-btn:hover{ 
+    background-color:var(--ocean);
+}
+
+/*-----/hero--------*/
+
+/*-----advantages-------*/
+
+.advantages-section {
+    padding: 72px 0 72px;
+ 
+}
+
+.adventages-head {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em; 
+       
+}
+.adventages-list {
+}
+
+.adventages-item {
+}
+
+.adventages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.adventages-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--gray);
+}
+
+/*-----/advantages-------*/
+
+/*-----what-we-doing-------*/
+
+.what-we-doing-section {
+    margin-bottom: 72px;
+}
+
+
+.what-we-doing-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.what-we-doing-list {
+}
+
+.list {
+}
+
+.what-we-doing-item {
+}
+
+/*-----/What-we-doing-------*/
+
+/*-----our team-------*/
+
+.our-team-section {
+    background-color: var(--white-logo);
+    padding: 120px 0;
+}
+
+.our-team-head {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.our-team-list {
+}
+
+.our-team-item {    
+}
+
+.our-team-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.our-team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--gray);
+}
+
+/*-----/our team-------*/
+
+/*-----footer-------*/
+
+.footer {
+    background-color:var(--brand-color); 
+    min-width: 1440px;
+    height: 310px;
+    padding: 100px 156px;
+}
+
+.footer-logo {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-logo);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-text);
+}
+
+/*-----/footer-------*/
+
+/*-----portfolio-------*/
+
+.portfolio-main{
+    padding: 72px 0;
+
+}
+
+.portfolio-section {
+}
+
+.portfolio-head {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+
+
+}
+
+.portfolio-list {
+    display: flex;
+    margin-bottom: 72px;
+}
+.portfolio-item {
+}
+.portfolio-btn {
+    background:var(--white-logo);
+    border: 1px solid var(--footer-text);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color:var(--fiolet);
+    cursor: pointer;
+    text-align: center;
+}
+
+.portfolio-btn-all {
+    width: 69px;
+} 
+
+.portfolio-btn:focus,
+.portfolio-btn:hover{
+    background: var(--ocean);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color:var(--white);
+}
+
+
+/*-----/portfolio-------*/
+
+/*-----cards-------*/
+
+.cards-list {
+    list-style-type:none;
+}
+.cards-items {
+}
+.cards-link {
+}
+.cards-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+}
+
+.cards-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--gray);
+}
+
+.cards-title:hover,
+.cards-text:hover{
+    color:var(--ocean);
+}
+
+
+/*-----/cards-------*/
