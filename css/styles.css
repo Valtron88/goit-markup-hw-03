@@ -112,15 +112,25 @@ ul{
 
 /*-----/header--------*/
 
+.main {
+    
+
+}
 /*-----hero--------*/
 
 .hero-saction {
     background-color:var(--brand-color);
     margin-top: 72px;
-    padding: 188px 472px 188px 472px;
+
     min-width: 1440px;
-    min-height: 600px;
+    height: 600px;
+
  
+}
+
+.hero-container{
+    padding: 188px 472px;
+
 }
 
 .hero-head {
@@ -146,12 +156,12 @@ ul{
     background-color: var(--fiolet);
     border: none;
     cursor: pointer;
-    display: block;
     width: 169px;
     height: 56px;
     border-radius: 4px;
-    justify-content: center;
-    margin: 0 auto;
+    display: block;
+    margin: auto;
+
 }
 
 .hero-btn:focus,
