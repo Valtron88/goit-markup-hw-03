@@ -25,7 +25,6 @@ ul{
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
 .list{
@@ -40,9 +39,11 @@ ul{
 
 .header {
     padding: 24px 0;
-    border-width: 5px;
-    border-color: var(--footer-text);
- 
+    border-width: 0.5px;
+    border-color: #E7E9FC;
+    border-style: solid;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .header-container{
@@ -103,8 +104,6 @@ ul{
     display: flex;
     align-items: center;
  
-
-    
 }
 
 .header-adress-link {    
@@ -343,6 +342,7 @@ ul{
     letter-spacing: 0.02em;
     color: var(--footer-text);
     max-width: 264px;
+    margin-left: 0;
 }
 
 /*-----/footer-------*/
@@ -350,11 +350,18 @@ ul{
 /*-----portfolio-------*/
 
 .portfolio-main{
-    padding: 72px 0;
-
+  
 }
 
-.portfolio-section {
+.portfolio-btn-section{
+    padding:48px 0 72px ;
+    
+}
+
+
+
+.portfolio-btn-container {
+   
 }
 
 .portfolio-head {
@@ -364,14 +371,17 @@ ul{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 24px;
 
 
 }
 
 .portfolio-list {
     display: flex;
-    margin-bottom: 72px;
+    justify-content: center;
+    column-gap: 24px;
+    margin: 0 auto;
+   
 }
 .portfolio-item {
 }
@@ -387,6 +397,10 @@ ul{
     color:var(--fiolet);
     cursor: pointer;
     text-align: center;
+    padding: 12px 24px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
 .portfolio-btn-all {
@@ -405,19 +419,43 @@ ul{
 
 /*-----cards-------*/
 
+.cards{
+    padding-bottom: 120px;
+
+}
+
+.cards-container{
+
+
+}
+
 .cards-list {
     list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .cards-items {
 }
 .cards-link {
 }
+
+.cards-border{
+    padding: 32px 16px;
+    border-bottom: 1px solid #E7E9FC;
+    border-right : 1px solid #E7E9FC;
+    border-left:1px solid #E7E9FC;
+
+}
+
 .cards-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--brand-color);
+    margin-bottom: 8px;
 }
 
 .cards-text {
