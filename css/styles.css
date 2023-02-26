@@ -22,9 +22,9 @@ ul{
 }
 
 .container{
-    width: 1148px;
+    width: 1158px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 
 }
 
@@ -40,9 +40,18 @@ ul{
 
 .header {
     padding: 24px 0;
+    border-width: 5px;
+    border-color: var(--footer-text);
+ 
+}
+
+.header-container{
+    display: flex;
 }
 
 .header-navigation {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -53,13 +62,16 @@ ul{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-color);
+    margin-right: 76px;
 }
 
 .logo-span{
     color: var(--fiolet);
 }
 
-.header-list {   
+.header-list { 
+    display: flex; 
+    gap: 40px; 
 }
 
 .header-item {
@@ -82,17 +94,22 @@ ul{
     color:var(--ocean);
 }
 
-.header-adress {   
+.header-adress { 
+    margin-left: auto;  
+
 }
 
 .header-adress-list  {
+    display: flex;
+    align-items: center;
+ 
+
     
 }
 
-.header-adress-link {   
+.header-adress-link {    
     
 }
-
 
 .header-mail{
     color:var(--gray);
@@ -100,6 +117,7 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+   
 }
 
 .header-telephon{
@@ -108,6 +126,7 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-left: 40px;
 }
 
 /*-----/header--------*/
@@ -118,20 +137,15 @@ ul{
 }
 /*-----hero--------*/
 
+
 .hero-saction {
     background-color:var(--brand-color);
-    margin-top: 72px;
-
-    min-width: 1440px;
-    height: 600px;
-
- 
-}
-
-.hero-container{
-    padding: 188px 472px;
+    max-width: 1440px;
+    margin: auto;
+    padding: 188px 0;
 
 }
+
 
 .hero-head {
     font-size: 56px;
@@ -140,7 +154,7 @@ ul{
     letter-spacing: 0.02em;
     color:var(--white);
     display: block;
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto 48px auto;
    
 
@@ -156,11 +170,11 @@ ul{
     background-color: var(--fiolet);
     border: none;
     cursor: pointer;
-    width: 169px;
-    height: 56px;
+    min-width: 169px;
     border-radius: 4px;
     display: block;
     margin: auto;
+    padding: 16px 32px;
 
 }
 
@@ -173,8 +187,8 @@ ul{
 
 /*-----advantages-------*/
 
-.advantages-section {
-    padding: 72px 0 72px;
+.section {
+    padding: 120px 0 ;
  
 }
 
@@ -183,9 +197,14 @@ ul{
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em; 
+    margin-bottom: 72px;
+
        
 }
 .adventages-list {
+    display: flex;
+    gap: 24px;
+   
 }
 
 .adventages-item {
@@ -196,6 +215,8 @@ ul{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    min-width: 264px;
 }
 
 .adventages-text {
@@ -210,7 +231,8 @@ ul{
 /*-----what-we-doing-------*/
 
 .what-we-doing-section {
-    margin-bottom: 72px;
+    padding: 120px 0;
+   
 }
 
 
@@ -224,12 +246,18 @@ ul{
 }
 
 .what-we-doing-list {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+   
+
 }
 
 .list {
 }
 
 .what-we-doing-item {
+
 }
 
 /*-----/What-we-doing-------*/
@@ -237,8 +265,9 @@ ul{
 /*-----our team-------*/
 
 .our-team-section {
-    background-color: var(--white-logo);
-    padding: 120px 0;
+    background-color: #F4F4FD;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .our-team-head {
@@ -247,12 +276,21 @@ ul{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .our-team-list {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    
 }
 
-.our-team-item {    
+.our-team-item { 
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    max-height: 380px;
 }
 
 .our-team-title {
@@ -260,6 +298,9 @@ ul{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin: 32px auto 8px;
+    text-align: center;
+    
 }
 
 .our-team-text {
@@ -267,6 +308,8 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--gray);
+    margin-bottom: 32px;
+    text-align: center;
 }
 
 /*-----/our team-------*/
@@ -275,9 +318,9 @@ ul{
 
 .footer {
     background-color:var(--brand-color); 
-    min-width: 1440px;
-    height: 310px;
-    padding: 100px 156px;
+    width: 1440px;
+    margin: auto;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -288,6 +331,9 @@ ul{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-logo);
+    display: block;
+    margin-bottom: 16px;
+
 }
 
 .footer-text {
@@ -295,6 +341,7 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-text);
+    max-width: 264px;
 }
 
 /*-----/footer-------*/
