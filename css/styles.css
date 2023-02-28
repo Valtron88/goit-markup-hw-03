@@ -42,8 +42,6 @@ ul{
     border-width: 0.5px;
     border-color: #E7E9FC;
     border-style: solid;
-    width: 1440px;
-    margin: 0 auto;
 }
 
 .header-container{
@@ -53,6 +51,7 @@ ul{
 .header-navigation {
     display: flex;
     align-items: center;
+    margin-right:auto;
 }
 
 .header-logo {
@@ -96,13 +95,14 @@ ul{
 }
 
 .header-adress { 
-    margin-left: auto;  
+   
 
 }
 
 .header-adress-list  {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
  
 }
 
@@ -155,8 +155,6 @@ ul{
     display: block;
     max-width: 496px;
     margin: 0 auto 48px auto;
-   
-
 }
 
 .hero-btn {
@@ -187,8 +185,15 @@ ul{
 /*-----advantages-------*/
 
 .section {
-    padding: 120px 0 ;
+    padding: 120px 0 120px ;
+    width: 1440px;
+    margin: 0 auto;
+
  
+}
+
+.advantages-section{
+    padding:80px 0 120px;
 }
 
 .adventages-head {
@@ -196,8 +201,8 @@ ul{
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em; 
-    margin-bottom: 72px;
-
+    opacity: 0;
+    outline-offset: 0;
        
 }
 .adventages-list {
@@ -230,7 +235,7 @@ ul{
 /*-----what-we-doing-------*/
 
 .what-we-doing-section {
-    padding: 120px 0;
+    padding: 0 0 120px;
    
 }
 
@@ -264,8 +269,14 @@ ul{
 /*-----our team-------*/
 
 .our-team-section {
-    background-color: #F4F4FD;
-    width: 1440px;
+    background-color:var(--white-logo);
+    
+
+
+
+}
+
+.our-team-container{
     margin: 0 auto;
 }
 
@@ -282,14 +293,21 @@ ul{
     display: flex;
     column-gap: 24px;
     flex-wrap: wrap;
+
     
 }
 
 .our-team-item { 
-    background: #FFFFFF;
+    background:var(--white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    min-height: 380px;
+    display: block;
+}
+
+.our-team-text-block{
+    padding: 32px 16px;
+    text-align: center;
+
 }
 
 .our-team-title {
@@ -297,8 +315,7 @@ ul{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin: 32px auto 8px;
-    text-align: center;
+    margin: 0 auto 8px;
     
 }
 
@@ -307,8 +324,6 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--gray);
-    margin-bottom: 32px;
-    text-align: center;
 }
 
 /*-----/our team-------*/
@@ -331,8 +346,7 @@ ul{
     text-transform: uppercase;
     color: var(--white-logo);
     margin:0 auto 16px 0;
-    display: flex;
-    max-width: 1158px;
+    display: block;
 
 }
 
@@ -353,14 +367,14 @@ ul{
   
 }
 
-.portfolio-btn-section{
-    padding:48px 0 72px ;
+.portfolio-section{
+    padding:56px 0 120px ;
     
 }
 
 
 
-.portfolio-btn-container {
+.portfolio-container {
    
 }
 
@@ -370,8 +384,8 @@ ul{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 24px;
+    opacity: 0;
+
 
 
 }
@@ -380,7 +394,7 @@ ul{
     display: flex;
     justify-content: center;
     column-gap: 24px;
-    margin: 0 auto;
+    margin: 0 auto 72px;
    
 }
 .portfolio-item {
@@ -412,6 +426,7 @@ ul{
     background: var(--ocean);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color:var(--white);
+    border-color:transparent;
 }
 
 
