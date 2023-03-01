@@ -39,8 +39,8 @@ ul{
 
 .header {
     padding: 24px 0;
-    border-width: 0.5px;
-    border-color: #E7E9FC;
+    border-width: 1px;
+    border-color:var(--footer-text);
     border-style: solid;
 }
 
@@ -106,7 +106,8 @@ ul{
  
 }
 
-.header-adress-link {    
+.header-adress-link { 
+    margin-left: 40px;   
     
 }
 
@@ -125,7 +126,7 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-left: 40px;
+    
 }
 
 /*-----/header--------*/
@@ -184,13 +185,26 @@ ul{
 
 .section {
     padding: 120px 0 120px ;
-    margin: 0 auto;
+
 
  
 }
 
-.advantages-section{
-    padding:80px 0 120px;
+
+
+
+.visual-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .adventages-head {
@@ -249,16 +263,30 @@ ul{
 .what-we-doing-list {
     display: flex;
     column-gap: 24px;
-    flex-wrap: wrap;
+
+
    
 
 }
+
 
 .list {
 }
 
 .what-we-doing-item {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: calc((100% - 48px) / 3);
+  
 
+}
+
+.what-we-doing-img,
+.our-team-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*-----/What-we-doing-------*/
@@ -288,7 +316,7 @@ ul{
 .our-team-list {
     display: flex;
     column-gap: 24px;
-    flex-wrap: wrap;
+ 
 
     
 }
@@ -297,7 +325,8 @@ ul{
     background:var(--white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    display: block;
+    width: calc((100% - 75px) / 4);
+    
 }
 
 .our-team-text-block{
@@ -362,7 +391,7 @@ ul{
 }
 
 .portfolio-section{
-    padding:56px 0 120px ;
+    padding:96px 0 120px ;
     
 }
 
@@ -388,7 +417,7 @@ ul{
     display: flex;
     justify-content: center;
     column-gap: 24px;
-    margin: 0 auto 72px;
+    margin-bottom:  72px;
    
 }
 .portfolio-item {
@@ -397,7 +426,7 @@ ul{
     background:var(--white-logo);
     border: 1px solid var(--footer-text);
     border-radius: 4px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -406,8 +435,8 @@ ul{
     cursor: pointer;
     text-align: center;
     padding: 12px 24px;
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    background: var(--white-logo);
+    border: 1px solid var(--footer-text);
     border-radius: 4px;
 }
 
@@ -433,10 +462,7 @@ ul{
 
 }
 
-.cards-container{
 
-
-}
 
 .cards-list {
     list-style-type:none;
@@ -446,15 +472,26 @@ ul{
     row-gap: 48px;
 }
 .cards-items {
+    
 }
+
 .cards-link {
+    width: calc((100% - 48px) / 3);
+}
+
+
+.cards-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .cards-border{
     padding: 32px 16px;
-    border-bottom: 1px solid #E7E9FC;
-    border-right : 1px solid #E7E9FC;
-    border-left:1px solid #E7E9FC;
+    border-bottom: 1px solid var(--footer-text);
+    border-right : 1px solid var(--footer-text);
+    border-left:1px solid var(--footer-text);
 
 }
 
